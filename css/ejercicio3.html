@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Ejercicio3</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style3.css" />
+    </head>
+    <body>
+        <h2>Formulario de Alta</h2>
+
+        <form action="#">
+           <div class="columna">
+           <h3>Nombre y apellidos</h3>
+
+            <input type="text" name="nombre" id="nombre" />
+            <label for="nombre">Nombre</label>
+
+            <input type="text" name="ape1" id="ape1"/>
+            <label for="ape1">Segundo Apellido</label>
+
+            <input type="text" name="ape2" id="ape2"/>
+            <label for="ape2">Primer Apellido</label>
+           </div>
+
+
+           <div class="columna">
+           <h3>Direccion</h3>
+
+            <input type="text" id="direccion" name="direccion" />
+               <label for="direccion">Dirección</label>
+
+            <input type="text" id="cp" name="cp" />
+               <label for="cp" >Codigo Postal</label>
+
+            <input type="text" id="municipio" name="municipio" class="clearfix" />
+               <label for="municipio" >Municipio</label>
+
+            <p>Sexo<br />
+            <input type="radio" name="sexo" value="Hombre" />hombre<br />
+            <input type="radio" name="sexo" value="Mujer" />mujer<br /></p>
+
+            </div>
+
+
+
+            <p><textarea	name=“descripcion”	cols="40"	rows="5" ></textarea><br />
+            <input type="checkbox" name="suscripcion" checked />Subscribirme al boletin de novedades</p>
+
+            <input type="submit" name="enviar" value="Guardar Cambios" />
+            <input type="reset" name="borrar" value="Borrar los datos introducidos" />
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+/*teal, red, blue, orange, purple, olive, fuchsia y green.*/
+
+h1,table, #adicional a{
+    color:green;
+}
+h2,caption{
+    color:blue;
+}
+p strong,a,th{
+    color:red;
+}
+a em{
+    color:blue;
+}
+p .especial{
+    color:purple;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table .especial,table strong, .destacado{
+    color:orange;
+}
+th,td{
+    padding: 0.5em;
+#adicional{
+    color:olive;
+}
+
+#especial{
+    color:fuchsia;
+}

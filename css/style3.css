@@ -1,0 +1,17 @@
+.columna{
+float:left;
+width:50%;
+}
+
+input,label {
+    display:block;
+    margin-top: 1.5em;
+}
+
+#direccion{width:100%;}
+
+#cp{
+    display: inline;
+}
+
+#contenedor > form > ul > li:last-child()
