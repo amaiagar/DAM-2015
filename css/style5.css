@@ -1,0 +1,42 @@
+h1+p{
+    text-align: right;
+    font-style: italic;
+}
+
+body{background: orange;
+font-family: Arial, Georgia, Serif}
+
+.autor{
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1{text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+div{ padding: 5px;
+    margin: 15px 30px;
+}
+
+.grey{
+    background-color: #E0E0E2;
+    border: 2px dashed grey;
+}
+
+.yellow{
+    background-color: #FFFF99;
+    border: 2px solid 	#FFFF00;
+}
+
+.purple{
+    background-color: #EBCCFF;
+    border: 2px dotted 	#9900FF;
+}
+
+.blue{
+    background-color: #B2D1FF;
+    border: 2px double 	#0066FF;
+}
