@@ -1,0 +1,73 @@
+div{
+    position: absolute;
+    width:50%;
+    height: 50%;
+    left:25%;
+    top:25%;
+    overflow: hidden;
+    background-color: grey;
+}
+
+body{
+    background-color: #FFf302;
+}
+
+p{
+    padding-top: 90px;
+    font-size: 1.5em;
+}
+
+p:nth-child(2n +1){
+    font-style: italic;
+}
+
+.a{
+    position: absolute;
+    top:20%;
+    right:28%;
+}
+.b{
+    position: absolute;
+    top:34%;
+    right:5%;
+}
+.c{
+    position: absolute;
+    top:14%;
+    right:42%;
+}
+.d{
+    position: absolute;
+    top:18%;
+    right:67%;
+}
+.e{
+    position: absolute;
+    top:24%;
+    right:88%;
+}
+.f{
+    position: absolute;
+    top:90%;
+    right:16%;
+}
+.g{
+    position: absolute;
+    top:81%;
+    right:38%;
+}
+.h{
+    position: absolute;
+    top:80%;
+    right:48%;
+}
+.i{
+    position: absolute;
+    top:85%;
+    right:69%;
+}
+.j{
+    position: absolute;
+    top:87%;
+    right:88%;
+}
