@@ -1,0 +1,15 @@
+li{ float:left;
+    width:50%;}
+.titulo{
+    font-weight: bold;
+    font-size: 1em;
+    color:black;
+ }
+label{display:block;
+    color:grey;
+    font-size: 0.5em;}
+.requerido{ color:red;}
+
+
+
+ul{list-style-type: none;}

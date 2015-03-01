@@ -5,8 +5,14 @@ body {
 
 .wrapper {
     width: 80%;
-    background-color: #CED4D6;
+    height:100%;
+    background-color: white;
     margin: auto;
+
+}
+
+.header{
+    height:auto;
 }
 
 .header img {
@@ -26,7 +32,15 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #192231;
-    color: white;
+}
+
+.menu a{
+    text-decoration: none;
+    color:white;
+
+}
+.menu a:hover {
+    font-weight: bold;
 }
 
 .menu li {
@@ -42,20 +56,32 @@ h1 {
     padding: 0 10px;
     margin:0;
     background-color: white;
+    overflow: hidden;
 }
 
 
 
-.pics {}
+.pics {
+
+}
 
 .imgfooter {
-    margin-top: 0;}
+    margin-top: 0;
+    font-size: 0.7em;
+    text-align: center;}
 
 .ads {
-width: 25%;
-    float: right;}
+    width: 25%;
+    float: right;
+    }
 
-.links {}
+.ads img{
+    display: block;
+    margin: 10% 30% 10%;
+}
+
+.links {
+    text-decoration: none;}
 
 .featured {
     width: 25%;
@@ -66,9 +92,12 @@ width: 25%;
 }
 
 .footer {
-    padding-top: 800px;
+    text-align: center;
 }
 
+.footer img{
+    padding: 5% 3% 5%;
+}
 .hidden {
     display: none;
 }
