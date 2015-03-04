@@ -1,0 +1,73 @@
+ #container { width: 100%; height:500px; position: relative;}
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 20px;
+            position:absolute;
+            padding: 5px;
+            transition: all 2s linear 0;
+        }
+        .box:hover {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: yellow;
+            font-size: 18px;
+            position:absolute;
+            transform: rotate(-90deg);
+
+        }
+        .ex01 .box {
+            left: 10px;
+            top: 30px;
+        }
+        .ex01 .box:hover {
+            left: 90%;
+            top: 30%;
+
+        }
+        .ex02 .box {
+            left: 10px;
+            top: 150px;
+        }
+        .ex02 .box:hover {
+            left: 90%;
+            top: 10%;
+
+        }
+        .ex03 .box {
+            left: 10px;
+            top: 270px;
+        }
+        .ex03 .box:hover {
+            left: 90%;
+            top: 70%;
+            transition: all 2s ease-out 0;
+        }
+        .ex04 .box {
+            left: 10px;
+            top: 390px;
+        }
+        .ex04 .box:hover {
+            left: 90%;
+            top: 50%;
+            transition: all 5s ease-in-out 0;
+        }
+
+h1 {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
