@@ -7,6 +7,9 @@ var READY_STATE_COMPLETE=4;
 var peticion_http;
 
 function cargaContenido(url, metodo, funcion) {
+    var estados = document.getElementById("recurso");
+    estados.value=url;
+
   peticion_http = inicializa_xhr();
 
   if(peticion_http) {
@@ -36,13 +39,21 @@ function muestraContenido() {
   if(peticion_http.readyState == READY_STATE_COMPLETE) {
 
     if(peticion_http.status == 200) {
-      alert(peticion_http.responseText);
+        var estados = document.getElementById("contenidos");
+        var parrafo = document.createElement("p");
+        var contenido = document.createTextNode(peticion_http.responseText);
+        estados.appendChild(parrafo);
+        // Añadir el nodo Text como hijo del nodo Element
+        parrafo.appendChild(contenido);
+
+        alert(peticion_http.getAllResponseHeaders);
     }
   }
 }
 
 function descargaArchivo() {
-  cargaContenido("http://localhost/holamundo.txt", "GET", muestraContenido);
+  cargaContenido("http://localhost/DAM2012/ajax/ejercicio1/index.html", "GET", muestraContenido);
 }
 
+//var enviar = document.getElementById("enviar")
 window.onload = descargaArchivo;
