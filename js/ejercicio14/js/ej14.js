@@ -17,7 +17,7 @@ console.log(enlace.href);
 console.log("Numero de enlaces que enlazan a http://prueba");
 var cont=0;
 for (var i=0; i<enlaces.length;i++){
-    if (enlaces[i].href==="http://prueba/") cont++;
+    if (enlaces[i].href==="http://prueba/" || enlaces[i].href==="http://prueba") cont++;
 }
 console.log(cont);
 
@@ -26,3 +26,9 @@ var parrafos= document.getElementsByTagName("p");
 var parrafo=parrafos[2];
 var a_p3=parrafo.getElementsByTagName("a").length;
 console.log(a_p3);
+
+
+//con query selector all
+/*console.log("query selector all");
+var pruebaLinks= document.querySelectorAll("[href='http://prueba']"]);
+console.log(pruebaLinks.length);*/

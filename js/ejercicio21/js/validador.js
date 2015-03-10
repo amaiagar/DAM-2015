@@ -5,7 +5,8 @@ El password debe tener una longitud mínima de 6 caracteres, y contener al menos
 
 
 
-function nombre_obligatorio() {
+function nombre_obligatorio(sms) {
+    console.log(sms);
   valor = registro_nombre.value;
   if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
     console.log("rellene el nombre");
@@ -39,7 +40,7 @@ function validacion() {
     console.log('[ERROR] registro_comentarios no tiene valor');
     return false;
   }
-  else if (!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(registro_email))) {
+  else if (!(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)$/.test(registro_email))) {
       console.log('[ERROR] email incorrecto');
       return false;
   }
