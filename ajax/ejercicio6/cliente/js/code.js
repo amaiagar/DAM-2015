@@ -81,6 +81,7 @@ window.onload = function() {
                }
                 document.getElementById("cmbProvincias").innerHTML=text;*/
                 var lista=document.getElementById("cmbMunicippios").options;
+                lista.options.lenght=0;
                 lista[0]=new Option("--Selecciona--");
                 for (var i=0;i<provincias.length;i++){
                     var cod_prov=provincias[i].getElementsByTagName("codigo")[0].firstChild.nodeValue;

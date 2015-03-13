@@ -1,0 +1,8 @@
+{
+    "document":false,
+    "window":false,
+    "jquery": false,
+    "$":false,
+    "HTMLFormElement" : false,
+    "global" : [ "HTMLFormElement" ]
+}
