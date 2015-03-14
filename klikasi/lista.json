@@ -1,0 +1,60 @@
+{
+  "1": {
+    "es": "casa",
+    "eus": "etxea"
+  },
+  "2": {
+    "es": "bonito",
+    "eus": [
+      "polita",
+      "ederra"
+    ]
+  },
+"3": {
+    "es": "uno",
+    "eus": "bat"
+  },
+"4": {
+    "es": "dos",
+    "eus": "bi"
+  },
+"5": {
+    "es": "tres",
+    "eus": "hiru"
+  },
+"6": {
+    "es": "cuatro",
+    "eus": "lau"
+  },
+"7": {
+    "es": "cinco",
+    "eus": "bost"
+  },
+"8": {
+    "es": "lunes",
+    "eus": "astelehena"
+  },
+"9": {
+    "es": "martes",
+    "eus": "asteartea"
+  },
+"10": {
+    "es": "miercoles",
+    "eus": "asteazkena"
+  },
+"11": {
+    "es": "jueves",
+    "eus": "osteguna"
+  },
+"12": {
+    "es": "viernes",
+    "eus": "ostirala"
+  },
+"13": {
+    "es": "sabado",
+    "eus": [
+      "larunbata",
+      "zapatua"
+    ]
+}
+}

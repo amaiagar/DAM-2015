@@ -1,4 +1,4 @@
-var cargarHtml=function(url){
+var cargarHtml=function(url,cb){
     $.ajax({
     // la URL para la petición
     url : url,
@@ -14,6 +14,7 @@ var cargarHtml=function(url){
     success : function(html) {
         console.log(url);
         $('#container').html(html);
+        cb();
     },
 
     // código a ejecutar si la petición falla;
@@ -32,14 +33,42 @@ var cargarHtml=function(url){
 };
 
 
+
+
+
+
 $(document).ready(function() {
   console.log('documentReady');
 
-    cargarHtml('html/login.html');
-    /*$('#myButton').on('click', function () {
-    var $btn = $(this).button('loading')
-    // business logic...
-    $btn.button('reset')
-  })*/
+    cargarHtml('html/login.html',loginLoad);
 
 });
+
+function loginLoad(){
+    //btnLogin
+    $('#btnLogin').on('click', function () {
+    var $btn = $(this).button('loading')
+
+    console.log('btnLogin');
+    $btn.button('reset');
+        cargarHtml('html/lista.html',cargarLista);
+  })
+}
+
+function cargarLista(){
+    console.log('cargarLista');
+    var lista="";
+            $.getJSON("lista.json", function(datos) {
+                //alert("Dato: " + datos["1"]);
+                console.log(datos);
+                $.each(datos, function(i, item) {
+                    //console.log(datos[i].es+ " "+ datos[i].eus);
+                    //console.log(i);
+                    lista=lista+"<tr><td>"+i+"</td><td>"+datos[i].eus+"</td><td>"+datos[i].es+"</td></tr>";
+                });
+                    console.log(lista);
+    $('#lista_content').html(lista);
+            });
+
+
+}
