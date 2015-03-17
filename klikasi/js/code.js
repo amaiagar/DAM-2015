@@ -1,4 +1,5 @@
 var cargarHtml=function(url,cb){
+    "use strict"
     $.ajax({
     // la URL para la petición
     url : url,
