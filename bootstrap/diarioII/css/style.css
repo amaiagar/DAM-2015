@@ -1,0 +1,109 @@
+header, #contenido{
+    width: 80%;
+    height:100%;
+    background-color: white;
+    margin: auto;
+}
+header img {
+    width:100%;
+}
+
+h1 {
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+
+.news {
+    margin: 0;
+    float: left;
+    padding: 0 10px;
+    margin:0;
+    background-color: white;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 770px) {
+    #carousel-example-generic{
+        display: none;
+    }
+    #contenido{
+        width: 100%;
+        margin: 0;
+    }
+    .destacados{
+    }
+}
+
+.pics {
+
+}
+
+.imgfooter {
+    margin-top: 0;
+    font-size: 0.9em;
+    text-align: center;}
+
+.ads {
+    width: 25%;
+    float: right;
+    }
+
+.ads img{
+    display: block;
+    margin: 10% 30% 10%;
+}
+
+.links {
+    text-decoration: none;}
+
+.featured {
+    width: 25%;
+    float: right;
+}
+.featured ul{
+    list-style-type: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer img{
+    padding: 5% 3% 5%;
+}
+.hidden {
+    display: none;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.ove-hide {
+    overflow: hidden;
+}
+
+.ove-scroll {
+    overflow: scroll;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
